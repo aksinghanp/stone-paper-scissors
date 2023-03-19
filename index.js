@@ -4,8 +4,8 @@ const handOptions = {
   "scissors": "imgs/Scissors.png"
 }
 
-let SCORE1=0;
-let SCORE2=0;
+let SCORE1= 0;
+let SCORE2 = 0;
 
 const pickUserHand = (hand) => {
   let hands = document.querySelector(".hands");
@@ -62,6 +62,9 @@ const restartGame = () => {
   let replay=document.querySelector(".newGame");
     replay.innerText="PLAY AGAIN";
 
+    let nxt = document.querySelector(".nxt");
+    nxt.style.display = "none";  
+
     let img1=document.querySelector("#userPickImage");
     img1.removeAttribute("style","opacity:1;background-color: #075407;border-radius: 50%;box-shadow: 10px 10px 10px 10px #054305;");
 
@@ -76,12 +79,14 @@ const setDecision = (decision) => {
 }
 
 const setScore1 = (newScore) => {
-  SCORE1 = newScore;
+  localStorage.setItem("user-score", newScore)
+  SCORE1 = + newScore;
   document.querySelector(".s1 h1").innerText = newScore;
 }
 
 const setScore2 = (newScore) => {
-  SCORE2 = newScore;
+  localStorage.setItem("computer-score", newScore)
+  SCORE2 = + newScore;
   document.querySelector(".s2 h1").innerText = newScore;
 }
 
@@ -125,12 +130,13 @@ const reGame=()=>{
     img2.removeAttribute("style","opacity:1;background-color: #075407;border-radius: 50%;box-shadow: 10px 10px 10px 10px #054305;");
 
 
-  SCORE1=0;
+  SCORE1= 0;
   SCORE2=0;  
   document.querySelector(".s1 h1").innerText = 0;
   document.querySelector(".s2 h1").innerText = 0;
 
-
+  localStorage.removeItem("user-score")
+  localStorage.removeItem("computer-score")
 
 }
 
@@ -148,3 +154,5 @@ const hideRules=()=>{
 var confettiSettings = { target: 'my-canvas' };
 var confetti = new ConfettiGenerator(confettiSettings);
 confetti.render();
+setScore1(localStorage.getItem("user-score") || 0)
+setScore2(localStorage.getItem("computer-score") || 0)
