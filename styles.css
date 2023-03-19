@@ -207,8 +207,16 @@ body {
   justify-content: center;
   align-items: center;
   background: radial-gradient(134.34% 134.34% at 50% 0%,#0eb91c 0%,#034a13 100% );
- 
 }
+
+
+.celeb .pic2{
+  position: absolute;
+  top: 10px;
+  width: 594px;
+  height: 301px;
+}
+
 
 .celeb p{
   color: #fff;
