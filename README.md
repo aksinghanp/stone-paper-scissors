@@ -11,3 +11,6 @@ Features List:
 
 
 Screenshots:
+https://github.com/aksinghanp/stone-paper-scissors/blob/master/sps1.png
+https://github.com/aksinghanp/stone-paper-scissors/blob/master/sps2.png
+https://github.com/aksinghanp/stone-paper-scissors/blob/master/sps3.png
