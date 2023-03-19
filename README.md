@@ -1,5 +1,5 @@
 # stone-paper-scissors
-[Link](https://resonant-fenglisu-3472b5.netlify.app/)
+[Link](https://stately-halva-9f9242.netlify.app/)
 
 This is a simple project built using HTML,CSS and Javascipt
 Features List:
