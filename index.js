@@ -89,8 +89,8 @@ const celebImg=()=>{
   let wrap = document.querySelector(".wrapper");
   wrap.style.display = "none";
 
-  let rules =document.querySelector(".rules-btn");
-  rules.style.display="none";
+  // let rules =document.querySelector(".rules-btn");
+  // rules.style.display="none";
 
   let nxt =document.querySelector(".nxt");
   nxt.style.display="none";
