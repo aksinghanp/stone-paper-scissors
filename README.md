@@ -2,6 +2,7 @@
 [Link](https://stately-halva-9f9242.netlify.app/)
 
 This is a simple project built using HTML,CSS and Javascipt
+
 Features List:
 1. The game is designed for two players, one is you as a player and the other opponent is your computer.
 2. There will simultaneous turns given to you and your computer, as soon as you choose one option for yourself ie. stone/paper/scissor you opponent will also strike at the same time.
@@ -11,6 +12,6 @@ Features List:
 
 
 Screenshots:
-https://github.com/aksinghanp/stone-paper-scissors/blob/master/sps1.png
-https://github.com/aksinghanp/stone-paper-scissors/blob/master/sps2.png
-https://github.com/aksinghanp/stone-paper-scissors/blob/master/sps3.png
+![sps1](https://user-images.githubusercontent.com/73906564/226196253-c51b2c85-11cd-44e4-ba69-19a330944bb2.png)
+![sps2](https://user-images.githubusercontent.com/73906564/226196320-1c04730c-9515-4b58-8abf-841647f1b671.png)
+![sps3](https://user-images.githubusercontent.com/73906564/226196325-8cd01b73-e37c-4598-97d7-2a11e284b46d.png)
