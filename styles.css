@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(
+    134.34% 134.34% at 50% 0%,
+    #0eb91c 0%,
+    #034a13 100%
+  );
+}
+
+.scoreboard {
+  width: 700px;
+  height: 150px;
+  border-radius: 15px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.title {
+  padding-left: 30px;
+  margin-right: 159px
+}
+
+.score {
+  width: 150px;
+  height: 114px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score h1 {
+  color: #565468;
+  font-size: 56px;
+  font-family: "Barlow", sans-serif;
+}
+
+.score p {
+  color: #2a45c2;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 2.5px;
+  text-align: left;
+}
+
+.hands {
+  background-image: url("imgs/triangle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+  width: 476px;
+  height: 430px;
+  margin-top: 100px;
+  display: flex;
+  z-index: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hands img {
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+.hands .paper {
+  margin-right: 20px;
+}
+
+.hands .scissors {
+  margin-left: 20px;
+}
+
+.hands .hand {
+  cursor: pointer;
+  transition: all 0.20s;
+}
+
+.hands .hand:hover {
+  transform: translate3d(0px, -9px, 0px);
+}
+
+.contest {
+  display: none;
+  margin-top: 50px;
+  width: 900px;
+}
+
+.contest img {
+  width: 275px;
+  height: 275px;
+}
+
+.contest > div {
+  flex: 1;
+}
+
+.contest h1 {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.newGame {
+  color: hsl(229, 25%, 31%);
+  background-color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s;
+  margin-bottom: 20px;
+}
+
+.newGame:hover {
+  background: rgb(218, 218, 218);
+  transform: translate3d(0px, -2px, 0px);
+}
+
+.handImageContainer #userPickImage:hover {
+  transform: translate3d(0px, -8px, 0px);
+}
+.computerhand #computerPickImage:hover{
+  transform: translate3d(0px, -8px, 0px);
+}
+.contest .handImageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.referee {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.referee h1 {
+  font-size: 45px;
+  color: white;
+}
+
+.computerhand {
+  display: flex;
+  flex-direction: column;
+}
+
+.rules-btn{
+    position: absolute;
+    top: 600px;
+    right: 120px;
+    color: #c9c9c9;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.75rem 0;
+    border: 1.5px solid #c9c9c9;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    letter-spacing: -1px;
+    margin: 5rem auto;
+    width: 6rem;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.2;
+    z-index: 999;
+    background: transparent;
+}
+
+.nxt{
+  display:none;
+  top: 600px;
+  right: 10px;
+}
+
+.celeb{
+  display: none;
+  height: 746px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(134.34% 134.34% at 50% 0%,#0eb91c 0%,#034a13 100% );
+ 
+}
+
+.celeb p{
+  color: #fff;
+  /* font-size: 16px; */
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 2.5px;
+  margin-bottom: 50px;
+  /* text-align: left; */
+}
+
+.celeb h1{
+  color: #fff;
+  /* font-size: 16px; */
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 2.5px;
+  padding: 20px;
+}
+
+.rulesimg{
+display: none;  
+position: absolute;
+width: 303px;
+height: 367px;
+top: 288px;
+right: 96px;
+}
+
+
+#my-canvas{
+  position:fixed;
+  height: 500px;
+  width: 800px;
+  top: 77px;
+}
